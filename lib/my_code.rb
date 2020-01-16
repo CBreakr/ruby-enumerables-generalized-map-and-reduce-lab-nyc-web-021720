@@ -18,8 +18,9 @@ def reduce(source, initial = nil)
     index = 1
   end
   
-  source.each do |val|
+  while index < source.length do
     result = yield(val, result)
+    index += 1
   end
   
   return result
