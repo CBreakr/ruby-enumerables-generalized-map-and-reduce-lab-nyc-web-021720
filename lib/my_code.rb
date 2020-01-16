@@ -18,5 +18,5 @@ def reduce(source, initial = 0)
   return result
 end
 
-val = reduce(){|memo, n| memo && n}
+val = reduce([false, nil, nil, nil]){|memo, n| memo && n}
 puts "end value #{val}"
