@@ -12,14 +12,7 @@ end
 def reduce(source, initial = 0)
   result = initial
   source.each do |val|
-    puts "before yield: #{result}, #{val}."
     result = yield(result, val)
-    puts "the result #{result}."
   end
   return result
 end
-
-val = reduce([false, nil, nil, nil]){|memo, n| memo && n}
-puts "end value #{val}."
-
-puts "test: #{(false && nil)}"
