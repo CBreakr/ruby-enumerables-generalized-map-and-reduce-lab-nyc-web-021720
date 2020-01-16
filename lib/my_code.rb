@@ -9,11 +9,19 @@ end
 
 # making a general-case initial value is
 # a strange and ambiguous thing
-def reduce(source, initial = 0)
+def reduce(source, initial = nil)
   result = initial
+  index = 0
+
+  if !initial then
+    result = source[0]
+    index = 1
+  end
+  
   source.each do |val|
     result = yield(val, result)
   end
+  
   return result
 end
 
