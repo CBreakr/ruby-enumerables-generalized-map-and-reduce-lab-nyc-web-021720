@@ -17,4 +17,4 @@ def reduce(source, initial = 0)
   return result
 end
 
-puts (nil && false)
+puts (false && nil)
