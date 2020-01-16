@@ -7,7 +7,7 @@ def map(source)
   return new_arr
 end
 
-# making a general-case initial value is 
+# making a general-case initial value is
 # a strange and ambiguous thing
 def reduce(source, initial = 0)
   result = initial
