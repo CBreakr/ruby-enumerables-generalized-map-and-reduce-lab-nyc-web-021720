@@ -19,7 +19,7 @@ def reduce(source, initial = nil)
   end
   
   while index < source.length do
-    result = yield(val, result)
+    result = yield(source[index], result)
     index += 1
   end
   
