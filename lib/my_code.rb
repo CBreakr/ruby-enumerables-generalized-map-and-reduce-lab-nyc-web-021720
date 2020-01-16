@@ -12,6 +12,7 @@ end
 def reduce(source, initial = 0)
   result = initial
   source.each do |val|
+    puts "before yield: #{result}, #{val}"
     result = yield(val, result)
     puts "the result #{result}"
   end
