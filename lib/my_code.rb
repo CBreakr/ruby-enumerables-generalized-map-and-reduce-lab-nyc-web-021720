@@ -13,6 +13,7 @@ def reduce(source, initial = 0)
   result = initial
   source.each do |val|
     result = yield(val, result)
+    puts "the result #{result}"
   end
   return result
 end
