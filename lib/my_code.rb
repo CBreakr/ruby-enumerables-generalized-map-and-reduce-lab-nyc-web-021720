@@ -17,4 +17,4 @@ def reduce(source, initial = 0)
   return result
 end
 
-puts "test #{true && 0}"
+puts (true && 0)
