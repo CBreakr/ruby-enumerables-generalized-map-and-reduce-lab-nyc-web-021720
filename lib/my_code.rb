@@ -12,7 +12,7 @@ end
 def reduce(source, initial = 0)
   result = initial
   source.each do |val|
-    result = yield(result, val)
+    result = yield(val, result)
   end
   return result
 end
