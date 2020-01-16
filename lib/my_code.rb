@@ -16,3 +16,5 @@ def reduce(source, initial = 0)
   end
   return result
 end
+
+puts "test #{0 && true}"
