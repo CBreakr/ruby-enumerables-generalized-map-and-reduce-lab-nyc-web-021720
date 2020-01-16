@@ -18,3 +18,5 @@ def reduce(source, initial = 0)
   return result
 end
 
+val = reduce(source_array){|memo, n| memo && n}
+puts "end value #{val}"
