@@ -10,12 +10,12 @@ end
 # making a general-case initial value is
 # a strange and ambiguous thing
 def reduce(source, initial = nil)
-  result = initial
-  index = 0
-
   if !initial then
     result = source[0]
     index = 1
+  else
+    result = initial
+    index = 0
   end
   
   while index < source.length do
